@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind The Wheels - Książka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Behind The Wheels</h1>
+        <p>Odkryj świat motoryzacji z nami</p>
+    </header>
+    <main>
+        <div class="book" id="magazine">
+            <div class="page">
+                <h2>Admiral</h2>
+                <img src="https://i.imgur.com/wVBbRj0.png" alt="Admiral">
+                <p>Admiral to elegancki sedan, który łączy w sobie styl i wydajność. Jego nowoczesny design przyciąga wzrok, a przestronne wnętrze sprawia, że podróż staje się przyjemnością. Z potężnym silnikiem pod maską, Admiral zapewnia dynamiczne osiągi, które zadowolą każdego kierowcę.</p>
+            </div>
+            <div class="page">
+                <h2>Mesa</h2>
+                <img src="https://i.imgur.com/erhhT7z.gif" alt="Mesa">
+                <p>Mesa to wyjątkowy SUV, który doskonale sprawdza się zarówno w miejskich warunkach, jak i w terenie. Jego solidna konstrukcja i wysoka wydajność sprawiają, że jest to idealny wybór dla osób ceniących przygody. Mesa charakteryzuje się dużą przestrzenią ładunkową oraz komfortowym wnętrzem, co czyni go perfekcyjnym towarzyszem każdej podróży.</p>
+            </div>
+            <div class="page">
+                <h2>Landstalker</h2>
+                <img src="https://i.imgur.com/5DJ3ZWo.png" alt="Landstalker">
+                <p>Landstalker to klasyczny przedstawiciel segmentu SUV-ów, który łączy w sobie moc i styl. Jego agresywna linia nadwozia i potężne koła czynią go prawdziwym królem dróg. Dzięki zaawansowanej technologii i silnikowi o wysokiej mocy, Landstalker oferuje znakomite osiągi zarówno na szosie, jak i w terenie.</p>
+            </div>
+            <div class="page">
+                <h2>Quad</h2>
+                <img src="https://i.imgur.com/UnQJSDd.jpg" alt="Quad">
+                <p>Quad to pojazd stworzony do zabawy i ekstremalnych przygód. Jego lekka konstrukcja i mocny silnik zapewniają znakomitą zwrotność i prędkość. Quad doskonale sprawdza się w trudnym terenie, a jego nowoczesne technologie oferują komfort i bezpieczeństwo. To idealny wybór dla entuzjastów off-roadu i adrenaliny.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Behind The Wheels. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#magazine").turn({
+                width: 800,
+                height: 600,
+                autoCenter: true
+            });
+        });
+    </script>
+</body>
+</html>
